@@ -46,7 +46,8 @@ dependencies {
     testImplementation("io.ktor:ktor-server-test-host")
     testImplementation("io.ktor:ktor-server-tests-jvm:2.3.12")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
+    testImplementation("org.junit.platform:junit-platform-launcher:1.10.2")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
     testImplementation("org.mockito:mockito-core:5.1.1")
     testImplementation("io.mockk:mockk:1.13.8")
@@ -63,6 +64,11 @@ dependencies {
     testImplementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.57.0")
     testImplementation("com.h2database:h2:2.3.232")
 
+}
 
-
+tasks.test {
+    useJUnitPlatform()
+    
+    // Exclude common package from test discovery
+    exclude("**/common/**")
 }
