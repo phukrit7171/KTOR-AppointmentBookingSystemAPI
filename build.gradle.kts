@@ -44,15 +44,24 @@ dependencies {
 
     // Testing dependencies
     testImplementation("io.ktor:ktor-server-test-host")
+    testImplementation("io.ktor:ktor-server-tests-jvm")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
     testImplementation("org.mockito:mockito-core:5.1.1")
-
-    // If you're using coroutines testing
+    testImplementation("io.mockk:mockk:1.13.8")
+    
+    // Coroutines testing
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
-    testImplementation("io.ktor:ktor-server-tests-jvm")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:2.1.10")
+    
+    // Additional testing utilities
+    testImplementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+    testImplementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+    testImplementation("org.jetbrains.exposed:exposed-core:0.57.0")
+    testImplementation("org.jetbrains.exposed:exposed-dao:0.57.0")
+    testImplementation("org.jetbrains.exposed:exposed-jdbc:0.57.0")
+    testImplementation("org.jetbrains.exposed:exposed-kotlin-datetime:0.57.0")
+    testImplementation("com.h2database:h2:2.3.232")
 
 
 
