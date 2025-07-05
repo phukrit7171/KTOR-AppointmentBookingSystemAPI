@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.camt.database.DatabaseManagerTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2025-07-05T09:04:24" hostname="WINFLIPPHUKRIT" time="1.956">
+  <properties/>
+  <testcase name="testDeleteServiceWithAppointments" classname="com.camt.database.DatabaseManagerTest" time="1.556"/>
+  <testcase name="testUpdateAppointmentSameTimeSlot" classname="com.camt.database.DatabaseManagerTest" time="0.042"/>
+  <testcase name="testGetAppointmentByIdNotFound" classname="com.camt.database.DatabaseManagerTest" time="0.023"/>
+  <testcase name="testUpdateService" classname="com.camt.database.DatabaseManagerTest" time="0.024"/>
+  <testcase name="testCreateAppointmentWithInvalidService" classname="com.camt.database.DatabaseManagerTest" time="0.018"/>
+  <testcase name="testUpdateAppointmentDoubleBooking" classname="com.camt.database.DatabaseManagerTest" time="0.035"/>
+  <testcase name="testGetServiceByIdNotFound" classname="com.camt.database.DatabaseManagerTest" time="0.016"/>
+  <testcase name="testOverlapDetectionEdgeCases" classname="com.camt.database.DatabaseManagerTest" time="0.031"/>
+  <testcase name="testGetAllServicesEmpty" classname="com.camt.database.DatabaseManagerTest" time="0.012"/>
+  <testcase name="testGetAllAppointments" classname="com.camt.database.DatabaseManagerTest" time="0.029"/>
+  <testcase name="testDeleteService" classname="com.camt.database.DatabaseManagerTest" time="0.015"/>
+  <testcase name="testUpdateAppointment" classname="com.camt.database.DatabaseManagerTest" time="0.014"/>
+  <testcase name="testUpdateServiceNotFound" classname="com.camt.database.DatabaseManagerTest" time="0.01"/>
+  <testcase name="testGetAllServices" classname="com.camt.database.DatabaseManagerTest" time="0.012"/>
+  <testcase name="testUpdateAppointmentWithInvalidService" classname="com.camt.database.DatabaseManagerTest" time="0.012"/>
+  <testcase name="testCreateAppointmentDoubleBooking" classname="com.camt.database.DatabaseManagerTest" time="0.017"/>
+  <testcase name="testGetAllAppointmentsEmpty" classname="com.camt.database.DatabaseManagerTest" time="0.009"/>
+  <testcase name="testGetServiceById" classname="com.camt.database.DatabaseManagerTest" time="0.01"/>
+  <testcase name="testGetAppointmentById" classname="com.camt.database.DatabaseManagerTest" time="0.011"/>
+  <testcase name="testDeleteAppointment" classname="com.camt.database.DatabaseManagerTest" time="0.018"/>
+  <testcase name="testDeleteAppointmentNotFound" classname="com.camt.database.DatabaseManagerTest" time="0.006"/>
+  <testcase name="testCreateAppointment" classname="com.camt.database.DatabaseManagerTest" time="0.01"/>
+  <testcase name="testCreateAppointmentNoOverlap" classname="com.camt.database.DatabaseManagerTest" time="0.013"/>
+  <testcase name="testCreateService" classname="com.camt.database.DatabaseManagerTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

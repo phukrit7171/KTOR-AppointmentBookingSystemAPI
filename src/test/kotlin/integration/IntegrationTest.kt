@@ -8,13 +8,14 @@ import io.ktor.http.*
 import io.ktor.server.testing.*
 import kotlinx.datetime.LocalDateTime
 import kotlin.test.*
+import com.camt.configureTestApplication
 
 class IntegrationTest {
     
     @Test
     fun testCompleteServiceLifecycle() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -80,7 +81,7 @@ class IntegrationTest {
     @Test
     fun testCompleteAppointmentLifecycle() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -164,7 +165,7 @@ class IntegrationTest {
     @Test
     fun testServiceAppointmentRelationship() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -226,7 +227,7 @@ class IntegrationTest {
     @Test
     fun testDoubleBookingPrevention() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -323,7 +324,7 @@ class IntegrationTest {
     @Test
     fun testAppointmentUpdateConflictPrevention() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -424,7 +425,7 @@ class IntegrationTest {
     @Test
     fun testMultipleServicesAndAppointments() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -490,7 +491,7 @@ class IntegrationTest {
     @Test
     fun testErrorHandlingAndRecovery() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }

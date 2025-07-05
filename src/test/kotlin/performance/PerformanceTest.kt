@@ -12,13 +12,14 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.datetime.LocalDateTime
 import kotlin.test.*
 import kotlin.time.measureTime
+import com.camt.configureTestApplication
 
 class PerformanceTest {
     
     @Test
     fun testConcurrentServiceCreation() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -60,7 +61,7 @@ class PerformanceTest {
     @Test
     fun testConcurrentAppointmentCreation() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -118,7 +119,7 @@ class PerformanceTest {
     @Test
     fun testLargeDatasetRetrieval() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -184,7 +185,7 @@ class PerformanceTest {
     @Test
     fun testDoubleBookingPerformance() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -265,7 +266,7 @@ class PerformanceTest {
     @Test
     fun testUpdatePerformance() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -318,7 +319,7 @@ class PerformanceTest {
     @Test
     fun testDeletePerformance() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }
@@ -367,7 +368,7 @@ class PerformanceTest {
     @Test
     fun testMemoryUsage() = testApplication {
         application {
-            TestConfiguration.configureTestApplication()
+            configureTestApplication()
         }
         
         val client = TestConfiguration.run { createJsonClient() }

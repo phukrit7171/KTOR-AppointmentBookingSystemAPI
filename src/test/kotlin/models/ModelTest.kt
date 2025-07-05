@@ -1,8 +1,10 @@
 package com.camt.models
 
 import kotlinx.datetime.LocalDateTime
+import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.json.Json
 import kotlin.test.*
+import org.junit.jupiter.api.assertDoesNotThrow
 
 class ModelTest {
     
@@ -94,10 +96,13 @@ class ModelTest {
             message = "Test successful",
             data = "Test data"
         )
-        
-        val serialized = json.encodeToString(ApiResponse.serializer(), apiResponse)
-        val deserialized = json.decodeFromString<ApiResponse<String>>(serialized)
-        
+
+        val stringSerializer = String.serializer()
+        val apiResponseSerializer = ApiResponse.serializer(stringSerializer)
+
+        val serialized = json.encodeToString(apiResponseSerializer, apiResponse)
+        val deserialized = json.decodeFromString(apiResponseSerializer, serialized)
+
         assertEquals(apiResponse.success, deserialized.success)
         assertEquals(apiResponse.message, deserialized.message)
         assertEquals(apiResponse.data, deserialized.data)
@@ -110,10 +115,13 @@ class ModelTest {
             message = "Test failed",
             data = null
         )
-        
-        val serialized = json.encodeToString(ApiResponse.serializer(), apiResponse)
-        val deserialized = json.decodeFromString<ApiResponse<String>>(serialized)
-        
+
+        val stringSerializer = String.serializer()
+        val apiResponseSerializer = ApiResponse.serializer(stringSerializer)
+
+        val serialized = json.encodeToString(apiResponseSerializer, apiResponse)
+        val deserialized = json.decodeFromString(apiResponseSerializer, serialized)
+
         assertEquals(apiResponse.success, deserialized.success)
         assertEquals(apiResponse.message, deserialized.message)
         assertNull(deserialized.data)
@@ -133,10 +141,20 @@ class ModelTest {
             message = "Service retrieved successfully",
             data = service
         )
-        
-        val serialized = json.encodeToString(ApiResponse.serializer(), apiResponse)
-        val deserialized = json.decodeFromString<ApiResponse<Service>>(serialized)
-        
+
+// 1. Create a serializer for the Service data class
+        val serviceSerializer = Service.serializer()
+
+// 2. Create a serializer for an ApiResponse that CONTAINS a Service
+        val apiResponseSerializer = ApiResponse.serializer(serviceSerializer)
+
+// 3. Now, serialize your object using the correct serializer
+        val serialized = json.encodeToString(apiResponseSerializer, apiResponse)
+
+// 4. And deserialize it the same way
+        val deserialized = json.decodeFromString(apiResponseSerializer, serialized)
+
+
         assertEquals(apiResponse.success, deserialized.success)
         assertEquals(apiResponse.message, deserialized.message)
         assertNotNull(deserialized.data)

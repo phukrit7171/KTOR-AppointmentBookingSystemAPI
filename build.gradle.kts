@@ -44,7 +44,7 @@ dependencies {
 
     // Testing dependencies
     testImplementation("io.ktor:ktor-server-test-host")
-    testImplementation("io.ktor:ktor-server-tests-jvm")
+    testImplementation("io.ktor:ktor-server-tests-jvm:2.3.12")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")

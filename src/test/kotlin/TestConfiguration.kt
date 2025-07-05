@@ -11,6 +11,7 @@ import kotlinx.serialization.json.Json
 import org.jetbrains.exposed.sql.Database
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.transactions.transaction
+import com.camt.plugins.*
 
 /**
  * Test configuration utilities and shared setup
@@ -57,12 +58,13 @@ object TestConfiguration {
     /**
      * Configures the test application with all necessary plugins
      */
-    fun Application.configureTestApplication() {
-        com.camt.plugins.configureDatabase()
-        com.camt.plugins.configureSerialization()
-        com.camt.plugins.configureRouting()
-        com.camt.plugins.configureStatusPages()
-        com.camt.plugins.configureCORS()
-        com.camt.plugins.configureCallLogging()
-    }
+
+}
+fun Application.configureTestApplication() {
+    configureDatabase()
+    configureSerialization()
+    configureRouting()
+    configureStatusPages()
+    configureCORS()
+    configureCallLogging()
 }
