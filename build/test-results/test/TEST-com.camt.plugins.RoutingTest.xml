@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.camt.plugins.RoutingTest" tests="19" skipped="0" failures="8" errors="0" timestamp="2025-07-05T09:04:30" hostname="WINFLIPPHUKRIT" time="0.302">
+<testsuite name="com.camt.plugins.RoutingTest" tests="19" skipped="0" failures="8" errors="0" timestamp="2025-07-05T10:02:51" hostname="WINFLIPPHUKRIT" time="0.329">
   <properties/>
-  <testcase name="testDeleteServiceWithAppointments" classname="com.camt.plugins.RoutingTest" time="0.025">
+  <testcase name="testDeleteServiceWithAppointments" classname="com.camt.plugins.RoutingTest" time="0.026">
     <failure message="java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&lt;200 OK&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&lt;200 OK&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -37,11 +37,11 @@ Caused by: java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&l
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testGetAppointmentByIdNotFound" classname="com.camt.plugins.RoutingTest" time="0.014"/>
-  <testcase name="testUpdateService" classname="com.camt.plugins.RoutingTest" time="0.017"/>
-  <testcase name="testCreateAppointmentWithInvalidService" classname="com.camt.plugins.RoutingTest" time="0.011"/>
-  <testcase name="testGetServiceByIdNotFound" classname="com.camt.plugins.RoutingTest" time="0.011"/>
-  <testcase name="testGetAllServicesEmpty" classname="com.camt.plugins.RoutingTest" time="0.015">
+  <testcase name="testGetAppointmentByIdNotFound" classname="com.camt.plugins.RoutingTest" time="0.021"/>
+  <testcase name="testUpdateService" classname="com.camt.plugins.RoutingTest" time="0.016"/>
+  <testcase name="testCreateAppointmentWithInvalidService" classname="com.camt.plugins.RoutingTest" time="0.016"/>
+  <testcase name="testGetServiceByIdNotFound" classname="com.camt.plugins.RoutingTest" time="0.012"/>
+  <testcase name="testGetAllServicesEmpty" classname="com.camt.plugins.RoutingTest" time="0.012">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -82,7 +82,7 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 </failure>
   </testcase>
   <testcase name="testDeleteService" classname="com.camt.plugins.RoutingTest" time="0.017"/>
-  <testcase name="testUpdateAppointment" classname="com.camt.plugins.RoutingTest" time="0.018">
+  <testcase name="testUpdateAppointment" classname="com.camt.plugins.RoutingTest" time="0.015">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.camt.plugins.RoutingTest$testUpdateAppointment$1.invokeSuspend(RoutingTest.kt:659)
 	at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
@@ -102,10 +102,10 @@ Caused by: java.lang.NullPointerException
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testUpdateServiceNotFound" classname="com.camt.plugins.RoutingTest" time="0.013"/>
-  <testcase name="testGetServiceByIdInvalidId" classname="com.camt.plugins.RoutingTest" time="0.01"/>
-  <testcase name="testRootRoute" classname="com.camt.plugins.RoutingTest" time="0.014"/>
-  <testcase name="testCreateAppointmentDoubleBooking" classname="com.camt.plugins.RoutingTest" time="0.017">
+  <testcase name="testUpdateServiceNotFound" classname="com.camt.plugins.RoutingTest" time="0.025"/>
+  <testcase name="testGetServiceByIdInvalidId" classname="com.camt.plugins.RoutingTest" time="0.011"/>
+  <testcase name="testRootRoute" classname="com.camt.plugins.RoutingTest" time="0.015"/>
+  <testcase name="testCreateAppointmentDoubleBooking" classname="com.camt.plugins.RoutingTest" time="0.019">
     <failure message="java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;409 Conflict&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;409 Conflict&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -141,7 +141,7 @@ Caused by: java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;40
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testGetAllAppointmentsEmpty" classname="com.camt.plugins.RoutingTest" time="0.016">
+  <testcase name="testGetAllAppointmentsEmpty" classname="com.camt.plugins.RoutingTest" time="0.017">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -181,8 +181,8 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testGetServiceById" classname="com.camt.plugins.RoutingTest" time="0.018"/>
-  <testcase name="testGetAppointmentById" classname="com.camt.plugins.RoutingTest" time="0.018">
+  <testcase name="testGetServiceById" classname="com.camt.plugins.RoutingTest" time="0.019"/>
+  <testcase name="testGetAppointmentById" classname="com.camt.plugins.RoutingTest" time="0.02">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.camt.plugins.RoutingTest$testGetAppointmentById$1.invokeSuspend(RoutingTest.kt:580)
 	at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
@@ -222,8 +222,8 @@ Caused by: java.lang.NullPointerException
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testDeleteAppointmentNotFound" classname="com.camt.plugins.RoutingTest" time="0.013"/>
-  <testcase name="testCreateAppointment" classname="com.camt.plugins.RoutingTest" time="0.02">
+  <testcase name="testDeleteAppointmentNotFound" classname="com.camt.plugins.RoutingTest" time="0.015"/>
+  <testcase name="testCreateAppointment" classname="com.camt.plugins.RoutingTest" time="0.018">
     <failure message="java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;409 Conflict&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;409 Conflict&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -259,7 +259,7 @@ Caused by: java.lang.AssertionError: expected:&lt;201 Created&gt; but was:&lt;40
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testCreateService" classname="com.camt.plugins.RoutingTest" time="0.017"/>
+  <testcase name="testCreateService" classname="com.camt.plugins.RoutingTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

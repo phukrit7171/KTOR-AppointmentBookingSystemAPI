@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.camt.performance.PerformanceTest" tests="7" skipped="0" failures="5" errors="0" timestamp="2025-07-05T09:04:27" hostname="WINFLIPPHUKRIT" time="2.24">
+<testsuite name="com.camt.performance.PerformanceTest" tests="7" skipped="0" failures="5" errors="0" timestamp="2025-07-05T10:02:49" hostname="WINFLIPPHUKRIT" time="2.014">
   <properties/>
-  <testcase name="testUpdatePerformance" classname="com.camt.performance.PerformanceTest" time="0.205"/>
-  <testcase name="testDoubleBookingPerformance" classname="com.camt.performance.PerformanceTest" time="0.357"/>
-  <testcase name="testConcurrentAppointmentCreation" classname="com.camt.performance.PerformanceTest" time="0.022">
+  <testcase name="testUpdatePerformance" classname="com.camt.performance.PerformanceTest" time="0.164"/>
+  <testcase name="testDoubleBookingPerformance" classname="com.camt.performance.PerformanceTest" time="0.332"/>
+  <testcase name="testConcurrentAppointmentCreation" classname="com.camt.performance.PerformanceTest" time="0.016">
     <failure message="kotlinx.datetime.DateTimeFormatException: java.time.format.DateTimeParseException: Text '2024-12-01T24:00:00' could not be parsed: Invalid value for HourOfDay (valid values 0 - 23): 24" type="kotlinx.datetime.DateTimeFormatException">kotlinx.datetime.DateTimeFormatException: java.time.format.DateTimeParseException: Text '2024-12-01T24:00:00' could not be parsed: Invalid value for HourOfDay (valid values 0 - 23): 24
 	at app//kotlinx.datetime.LocalDateTime$Companion.parse(LocalDateTime.kt:65)
 	at app//kotlinx.datetime.LocalDateTime$Companion.parse$default(LocalDateTime.kt:60)
@@ -44,7 +44,7 @@ Caused by: java.time.DateTimeException: Invalid value for HourOfDay (valid value
 	... 13 more
 </failure>
   </testcase>
-  <testcase name="testDeletePerformance" classname="com.camt.performance.PerformanceTest" time="0.181">
+  <testcase name="testDeletePerformance" classname="com.camt.performance.PerformanceTest" time="0.171">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -84,7 +84,7 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testMemoryUsage" classname="com.camt.performance.PerformanceTest" time="1.07">
+  <testcase name="testMemoryUsage" classname="com.camt.performance.PerformanceTest" time="0.971">
     <failure message="java.lang.AssertionError: expected:&lt;5&gt; but was:&lt;35&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;5&gt; but was:&lt;35&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -120,7 +120,7 @@ Caused by: java.lang.AssertionError: expected:&lt;5&gt; but was:&lt;35&gt;
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testLargeDatasetRetrieval" classname="com.camt.performance.PerformanceTest" time="0.354">
+  <testcase name="testLargeDatasetRetrieval" classname="com.camt.performance.PerformanceTest" time="0.317">
     <failure message="java.lang.AssertionError: expected:&lt;100&gt; but was:&lt;99&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;100&gt; but was:&lt;99&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -156,7 +156,7 @@ Caused by: java.lang.AssertionError: expected:&lt;100&gt; but was:&lt;99&gt;
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testConcurrentServiceCreation" classname="com.camt.performance.PerformanceTest" time="0.051">
+  <testcase name="testConcurrentServiceCreation" classname="com.camt.performance.PerformanceTest" time="0.043">
     <failure message="java.lang.AssertionError: expected:&lt;50&gt; but was:&lt;95&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;50&gt; but was:&lt;95&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)

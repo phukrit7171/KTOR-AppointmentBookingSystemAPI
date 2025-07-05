@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.camt.integration.IntegrationTest" tests="7" skipped="0" failures="7" errors="0" timestamp="2025-07-05T09:04:26" hostname="WINFLIPPHUKRIT" time="1.132">
+<testsuite name="com.camt.integration.IntegrationTest" tests="7" skipped="0" failures="7" errors="0" timestamp="2025-07-05T10:02:47" hostname="WINFLIPPHUKRIT" time="2.341">
   <properties/>
-  <testcase name="testErrorHandlingAndRecovery" classname="com.camt.integration.IntegrationTest" time="0.883">
+  <testcase name="testErrorHandlingAndRecovery" classname="com.camt.integration.IntegrationTest" time="2.119">
     <failure message="java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&lt;404 Not Found&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&lt;404 Not Found&gt;
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.failNotEquals(Assert.java:835)
@@ -37,7 +37,7 @@ Caused by: java.lang.AssertionError: expected:&lt;400 Bad Request&gt; but was:&l
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testCompleteServiceLifecycle" classname="com.camt.integration.IntegrationTest" time="0.03">
+  <testcase name="testCompleteServiceLifecycle" classname="com.camt.integration.IntegrationTest" time="0.026">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -117,7 +117,7 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testAppointmentUpdateConflictPrevention" classname="com.camt.integration.IntegrationTest" time="0.044">
+  <testcase name="testAppointmentUpdateConflictPrevention" classname="com.camt.integration.IntegrationTest" time="0.052">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.camt.integration.IntegrationTest$testAppointmentUpdateConflictPrevention$1.invokeSuspend(IntegrationTest.kt:371)
 	at _COROUTINE._BOUNDARY._(CoroutineDebugging.kt:42)
@@ -177,7 +177,7 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testServiceAppointmentRelationship" classname="com.camt.integration.IntegrationTest" time="0.034">
+  <testcase name="testServiceAppointmentRelationship" classname="com.camt.integration.IntegrationTest" time="0.02">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -217,7 +217,7 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <testcase name="testDoubleBookingPrevention" classname="com.camt.integration.IntegrationTest" time="0.039">
+  <testcase name="testDoubleBookingPrevention" classname="com.camt.integration.IntegrationTest" time="0.022">
     <failure message="java.lang.AssertionError: Expected value to be true." type="java.lang.AssertionError">java.lang.AssertionError: Expected value to be true.
 	at org.junit.Assert.fail(Assert.java:89)
 	at kotlin.test.junit.JUnitAsserter.fail(JUnitSupport.kt:56)
@@ -257,10 +257,10 @@ Caused by: java.lang.AssertionError: Expected value to be true.
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
 </failure>
   </testcase>
-  <system-out><![CDATA[2025-07-05 16:04:27.021 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
-2025-07-05 16:04:27.135 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.133 seconds.
-2025-07-05 16:04:27.138 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at http://localhost:80
-2025-07-05 16:04:27.139 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at https://localhost:443
+  <system-out><![CDATA[2025-07-05 17:02:48.243 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2025-07-05 17:02:48.959 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.728 seconds.
+2025-07-05 17:02:48.959 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at http://localhost:80
+2025-07-05 17:02:48.959 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at https://localhost:443
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

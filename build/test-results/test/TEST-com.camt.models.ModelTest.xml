@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.camt.models.ModelTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-07-05T09:04:27" hostname="WINFLIPPHUKRIT" time="0.014">
+<testsuite name="com.camt.models.ModelTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-07-05T10:02:52" hostname="WINFLIPPHUKRIT" time="0.022">
   <properties/>
-  <testcase name="testAppointmentWithNullOptionalFields" classname="com.camt.models.ModelTest" time="0.002"/>
+  <testcase name="testAppointmentWithNullOptionalFields" classname="com.camt.models.ModelTest" time="0.001"/>
   <testcase name="testApiResponseSerialization" classname="com.camt.models.ModelTest" time="0.0"/>
-  <testcase name="testApiResponseWithComplexData" classname="com.camt.models.ModelTest" time="0.0"/>
-  <testcase name="testAppointmentResponseSerialization" classname="com.camt.models.ModelTest" time="0.003"/>
-  <testcase name="testValidationConstraints" classname="com.camt.models.ModelTest" time="0.007"/>
+  <testcase name="testApiResponseWithComplexData" classname="com.camt.models.ModelTest" time="0.001"/>
+  <testcase name="testAppointmentResponseSerialization" classname="com.camt.models.ModelTest" time="0.005"/>
+  <testcase name="testValidationConstraints" classname="com.camt.models.ModelTest" time="0.013"/>
   <testcase name="testApiResponseWithNullData" classname="com.camt.models.ModelTest" time="0.0"/>
   <testcase name="testServiceRequestSerialization" classname="com.camt.models.ModelTest" time="0.0"/>
   <testcase name="testServiceWithNullId" classname="com.camt.models.ModelTest" time="0.0"/>
   <testcase name="testServiceSerialization" classname="com.camt.models.ModelTest" time="0.0"/>
-  <testcase name="testLocalDateTimeHandling" classname="com.camt.models.ModelTest" time="0.001"/>
+  <testcase name="testLocalDateTimeHandling" classname="com.camt.models.ModelTest" time="0.0"/>
   <testcase name="testAppointmentSerialization" classname="com.camt.models.ModelTest" time="0.0"/>
   <testcase name="testAppointmentRequestSerialization" classname="com.camt.models.ModelTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
